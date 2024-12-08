@@ -32,7 +32,7 @@ class VideoPlayerApp:
         NSApplication.sharedApplication()
 
         # Create a macOS window
-        origin = NSPoint(100, 100)  # Window's origin
+        origin = NSPoint(10, 10)  # Window's origin
         size = NSSize(800, 600)  # Window's size
         window_frame = NSRect(origin, size)
 
@@ -42,7 +42,7 @@ class VideoPlayerApp:
             NSBackingStoreBuffered,
             False,
         )
-        self.window.setTitle_("VLC Video Player")
+        self.window.setTitle_("vlc synth 500 [alpha 0.0.01]")
         self.window.makeKeyAndOrderFront_(None)
 
         # Create an NSView for video output
